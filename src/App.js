@@ -22,6 +22,11 @@ const [click, setClick] = React.useState([true]);
 
   return (<div>
     <h1>/r/reactjs</h1>
+    {/* <select>
+      <option>ttle only</option>
+      <option>with text</option>
+    </select> */}
+    <button onClick={()=> setClick(!click)}>Reload</button>
     <ul>
       {posts.map(post => (
         <li key={post.id}>{post.title}</li>
